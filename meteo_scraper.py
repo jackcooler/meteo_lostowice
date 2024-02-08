@@ -12,3 +12,5 @@ soup = BeautifulSoup(response.text, 'html.parser')
 
 tables = pd.read_html(url)
 t = tables[0]
+print(t.columns)
+print(type(list(t.columns)[0]))
